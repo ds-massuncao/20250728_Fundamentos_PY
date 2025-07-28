@@ -1,9 +1,9 @@
 # Faça um programa que preencha uma lista com 10 numeros, calcule e mostre os numeros primos e suas respectivas posições na lista.
 
-# Função para verificar se um número é primo
+
 import random
 
-
+# Função para verificar se um número é primo
 def eh_primo(n):
     if n <= 1:
         return False
@@ -12,10 +12,12 @@ def eh_primo(n):
             return False
     return True 
 
+
+
+
 # Inicio do programa
-
-
 numeros = []    
+
 # Preenche a lista com 10 números inteiros fornecidos pelo usuário
 for i in range(10):
     num = random.randint(1, 100)
@@ -23,6 +25,7 @@ for i in range(10):
 
 
 primos = []
+
 # Verifica cada número na lista e armazena os primos e suas posições    
 for i, num in enumerate(numeros):
     if eh_primo(num):
