@@ -13,7 +13,7 @@ def eh_primo(n):
     return True 
 
 # Inicio do programa
-# A variável numeros inicia uma lista vazia para armazenar os números
+
 
 numeros = []    
 # Preenche a lista com 10 números inteiros fornecidos pelo usuário
@@ -21,13 +21,13 @@ for i in range(10):
     num = random.randint(1, 100)
     numeros.append(num) 
 
-# Lista para armazenar os números primos e suas posições
+
 primos = []
 # Verifica cada número na lista e armazena os primos e suas posições    
 for i, num in enumerate(numeros):
     if eh_primo(num):
-        primos.append((num, i))  # Armazena o número primo e sua posição    
-# Exibe os números primos e suas posições
+        primos.append((num, i))  
+
 if primos:
     
     for num, pos in primos:
